@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="TestByEhasan">
+  <!--  <groups>
+  <run>
+  <include name="Goru"/>
+  </run>
+  </groups>
+   -->
+    <classes>
+    
+    <!-- <class name="example.TestingGroups">
+    <methods>
+    <exclude name="tc02VerifyLaunchPage"></exclude>
+    </methods>
+    </class>
+    <class name="example.NewTest"></class> 
+     -->
+     <class name="example.ParallelTesting"></class>
+    </classes>
+   
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

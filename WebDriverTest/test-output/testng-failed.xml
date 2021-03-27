@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="TestByEhasan(failed)">
+    <classes>
+      <class name="example.TestingGroups">
+        <methods>
+          <include name="tc03EnterCredentials"/>
+          <include name="tc04VerifyLoggedInPage"/>
+          <include name="tc05VerifyHyperlinks"/>
+        </methods>
+      </class> <!-- example.TestingGroups -->
+      <class name="example.NewTest">
+        <methods>
+          <include name="testEasy"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- example.NewTest -->
+    </classes>
+  </test> <!-- TestByEhasan(failed) -->
+</suite> <!-- Failed suite [Suite] -->
