@@ -1,5 +1,6 @@
 package example;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +13,7 @@ public class ParallelTesting {
     @Test	
 	public void executSessionOne() {
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\\\Selenium jars\\\\ChromeDriver\\\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\\\drivers\\\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("http://demo.guru99.com/V4/");
 		driver.findElement(By.name("uid")).sendKeys("Driver1");
@@ -45,6 +46,11 @@ public void executSessionThree() {
 	driver.findElement(By.name("uid")).sendKeys("Driver3");
 	
 	
+}
+@org.testng.annotations.AfterTest
+ public void AfterTest()
+{
+	driver.close();
 }
 
 
